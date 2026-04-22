@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>FitnessPro | Твоя новая жизнь начинается здесь</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <!-- PARTICLES CANVAS -->
+    <canvas id="particles"></canvas>
+
+    <!-- ПЛАВНАЯ ЗАГРУЗКА -->
+    <div class="preloader">
+        <div class="loader-ring"></div>
+        <div class="loader-text">FITNESS<span>PRO</span></div>
+    </div>
+
+    <!-- ШАПКА -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-inner">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-dumbbell"></i>
+                    </div>
+                    <div class="logo-text">
+                        FITNESS<span>PRO</span>
+                    </div>
+                </div>
+                <nav class="nav">
+                    <a href="#home" class="nav-link active">Главная</a>
+                    <a href="#about" class="nav-link">О нас</a>
+                    <a href="#programs" class="nav-link">Программы</a>
+                    <a href="#prices" class="nav-link">Цены</a>
+                    <a href="#contact" class="nav-link">Контакты</a>
+                </nav>
+                <button class="btn btn-glow header-cta">Начать</button>
+                <div class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ГЛАВНЫЙ ЭКРАН -->
+    <section id="home" class="hero">
+        <div class="hero-bg-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="hero-badge pulse-badge">
+                    <span class="badge-dot"></span>
+                    Ограниченное предложение
+                </div>
+                <h1 class="hero-title">
+                    Твоя первая тренировка — 
+                    <span class="gradient-text typewriter">бесплатно</span>
+                </h1>
+                <p class="hero-text">
+                    Стань сильнее, выносливее и увереннее. FitnessPro — это не просто спортзал, 
+                    это твоё новое тело и новая жизнь. Более 2000 довольных клиентов.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary btn-ripple" id="openModalBtn">
+                        <i class="fas fa-calendar-check"></i> Получить пробную тренировку
+                    </button>
+                    <button class="btn btn-outline btn-glow" id="scrollToProgramsBtn">
+                        <i class="fas fa-arrow-down bounce-icon"></i> Узнать больше
+                    </button>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number" data-target="2000">0</span>
+                        <span class="stat-label">+ клиентов</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-number" data-target="50">0</span>
+                        <span class="stat-label">тренеров</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-number" data-target="24">0</span>
+                        <span class="stat-label">часа в сутки</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll magnetic">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- О НАС -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag glitch-text">Почему мы</span>
+                <h2 class="section-title">Лучший фитнес-клуб <span class="gradient-text">в городе</span></h2>
+                <p class="section-subtitle">Мы создали идеальное пространство, где каждый достигает своих целей</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-card tilt-card" data-tilt>
+                    <div class="card-shine"></div>
+                    <div class="about-icon float-icon">
+                        <i class="fas fa-dumbbell"></i>
+                    </div>
+                    <h3>Современное оборудование</h3>
+                    <p>Новейшие тренажёры Hammer Strength, Life Fitness и функциональные зоны с кроссфит-оборудованием.</p>
+                    <div class="card-glow"></div>
+                </div>
+                <div class="about-card tilt-card" data-tilt data-delay="100">
+                    <div class="card-shine"></div>
+                    <div class="about-icon float-icon">
+                        <i class="fas fa-chalkboard-user"></i>
+                    </div>
+                    <h3>Тренеры-профессионалы</h3>
+                    <p>Мастера спорта, дипломированные специалисты с опытом от 5 лет. Индивидуальный подход к каждому.</p>
+                    <div class="card-glow"></div>
+                </div>
+                <div class="about-card tilt-card" data-tilt data-delay="200">
+                    <div class="card-shine"></div>
+                    <div class="about-icon float-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Удобное расписание</h3>
+                    <p>Работаем с 6:00 до 23:00, групповые занятия каждый час. Приходи в любое удобное время.</p>
+                    <div class="card-glow"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ПРОГРАММЫ -->
+    <section id="programs" class="programs">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Программы</span>
+                <h2 class="section-title">Выбери свой путь <span class="gradient-text">к успеху</span></h2>
+                <p class="section-subtitle">Более 20 направлений для любого уровня подготовки</p>
+            </div>
+            <div class="programs-grid">
+                <div class="program-card holographic">
+                    <div class="program-icon pulse-glow">
+                        <i class="fas fa-user-check"></i>
+                    </div>
+                    <h3>Персональные тренировки</h3>
+                    <p>Индивидуальный план, контроль техники, максимальный результат в кратчайшие сроки.</p>
+                    <div class="program-price">от 1 500 ₽ / час</div>
+                    <button class="btn-card magnetic-btn">Подробнее</button>
+                </div>
+                <div class="program-card featured holographic">
+                    <div class="featured-badge">Популярное</div>
+                    <div class="program-icon pulse-glow">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Групповые занятия</h3>
+                    <p>Йога, пилатес, кроссфит, танцы, единоборства — более 20 направлений.</p>
+                    <div class="program-price">от 800 ₽ / занятие</div>
+                    <button class="btn-card magnetic-btn">Подробнее</button>
+                </div>
+                <div class="program-card holographic">
+                    <div class="program-icon pulse-glow">
+                        <i class="fas fa-infinity"></i>
+                    </div>
+                    <h3>Безлимитный абонемент</h3>
+                    <p>Неограниченный доступ во все зоны и групповые программы 24/7.</p>
+                    <div class="program-price">от 3 500 ₽ / месяц</div>
+                    <button class="btn-card magnetic-btn">Подробнее</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- БЛОК С ЦИФРАМИ -->
+    <section class="achievements">
+        <div class="achievements-bg"></div>
+        <div class="container">
+            <div class="achievements-grid">
+                <div class="achievement-item" data-parallax="0.5">
+                    <div class="achievement-icon"><i class="fas fa-users"></i></div>
+                    <div class="achievement-number" data-target="5000">0</div>
+                    <div class="achievement-text">счастливых клиентов</div>
+                </div>
+                <div class="achievement-item" data-parallax="0.3">
+                    <div class="achievement-icon"><i class="fas fa-calendar-check"></i></div>
+                    <div class="achievement-number" data-target="120">0</div>
+                    <div class="achievement-text">групповых занятий</div>
+                </div>
+                <div class="achievement-item" data-parallax="0.7">
+                    <div class="achievement-icon"><i class="fas fa-ruler-combined"></i></div>
+                    <div class="achievement-number" data-target="1500">0</div>
+                    <div class="achievement-text">м² площади</div>
+                </div>
+                <div class="achievement-item" data-parallax="0.4">
+                    <div class="achievement-icon"><i class="fas fa-heart"></i></div>
+                    <div class="achievement-number" data-target="98" data-suffix="%">0</div>
+                    <div class="achievement-text">довольных клиентов</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ЦЕНЫ -->
+    <section id="prices" class="prices">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Тарифы</span>
+                <h2 class="section-title">Выбери свой <span class="gradient-text">абонемент</span></h2>
+                <p class="section-subtitle">Лучшие цены в городе без скрытых платежей</p>
+            </div>
+            <div class="prices-grid">
+                <div class="price-card glass">
+                    <div class="price-glow"></div>
+                    <h3>Дневной</h3>
+                    <div class="price-amount">
+                        <span class="currency">₽</span>
+                        <span class="price">2 500</span>
+                    </div>
+                    <div class="price-period">в месяц</div>
+                    <ul class="price-features">
+                        <li><i class="fas fa-check"></i> Посещение с 10:00 до 17:00</li>
+                        <li><i class="fas fa-check"></i> Тренажёрный зал</li>
+                        <li><i class="fas fa-check"></i> Кардио-зона</li>
+                        <li class="disabled"><i class="fas fa-times"></i> Групповые программы</li>
+                        <li class="disabled"><i class="fas fa-times"></i> Бассейн</li>
+                    </ul>
+                    <button class="btn btn-outline price-btn magnetic-btn">Выбрать</button>
+                </div>
+                <div class="price-card popular glass">
+                    <div class="price-glow active"></div>
+                    <div class="popular-badge">🔥 Хит продаж</div>
+                    <h3>Полный</h3>
+                    <div class="price-amount">
+                        <span class="currency">₽</span>
+                        <span class="price">4 500</span>
+                    </div>
+                    <div class="price-period">в месяц</div>
+                    <ul class="price-features">
+                        <li><i class="fas fa-check"></i> Круглосуточный доступ</li>
+                        <li><i class="fas fa-check"></i> Тренажёрный зал</li>
+                        <li><i class="fas fa-check"></i> Групповые программы</li>
+                        <li><i class="fas fa-check"></i> Бассейн</li>
+                        <li><i class="fas fa-check"></i> Кардио-зона</li>
+                    </ul>
+                    <button class="btn btn-primary price-btn magnetic-btn">Выбрать</button>
+                </div>
+                <div class="price-card glass">
+                    <div class="price-glow"></div>
+                    <h3>VIP</h3>
+                    <div class="price-amount">
+                        <span class="currency">₽</span>
+                        <span class="price">7 900</span>
+                    </div>
+                    <div class="price-period">в месяц</div>
+                    <ul class="price-features">
+                        <li><i class="fas fa-check"></i> Всё из "Полного"</li>
+                        <li><i class="fas fa-check"></i> 2 персональные тренировки</li>
+                        <li><i class="fas fa-check"></i> СПА-зона</li>
+                        <li><i class="fas fa-check"></i> Персональный шкафчик</li>
+                        <li><i class="fas fa-check"></i> Фитнес-тестирование</li>
+                    </ul>
+                    <button class="btn btn-outline price-btn magnetic-btn">Выбрать</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- КОНТАКТЫ -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-wrapper glass">
+                <div class="contact-info">
+                    <h2>Свяжитесь <span class="gradient-text">с нами</span></h2>
+                    <p>Остались вопросы? Оставьте заявку, и наш менеджер свяжется с вами в течение 15 минут.</p>
+                    <div class="contact-details">
+                        <div class="contact-item magnetic">
+                            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <span>Москва, ул. Спортивная, 10</span>
+                        </div>
+                        <div class="contact-item magnetic">
+                            <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+                            <span>+7 (999) 123-45-67</span>
+                        </div>
+                        <div class="contact-item magnetic">
+                            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                            <span>info@fitnesspro.ru</span>
+                        </div>
+                        <div class="contact-item magnetic">
+                            <div class="contact-icon"><i class="fas fa-clock"></i></div>
+                            <span>Пн-Вс: 06:00 - 23:00</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="magnetic-social"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="magnetic-social"><i class="fab fa-vk"></i></a>
+                        <a href="#" class="magnetic-social"><i class="fab fa-telegram"></i></a>
+                        <a href="#" class="magnetic-social"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form" id="leadForm">
+                    <div class="form-group floating">
+                        <input type="text" id="name" placeholder=" " required>
+                        <label for="name">Ваше имя</label>
+                        <div class="form-line"></div>
+                    </div>
+                    <div class="form-group floating">
+                        <input type="tel" id="phone" placeholder=" " required>
+                        <label for="phone">Номер телефона</label>
+                        <div class="form-line"></div>
+                    </div>
+                    <div class="form-group floating">
+                        <select id="interest">
+                            <option value="" disabled selected></option>
+                            <option>Интересует персональная тренировка</option>
+                            <option>Интересует абонемент</option>
+                            <option>Хочу записаться на пробное занятие</option>
+                            <option>Другой вопрос</option>
+                        </select>
+                        <label for="interest">Что вас интересует?</label>
+                        <div class="form-line"></div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block btn-ripple">
+                        <i class="fas fa-paper-plane"></i> Отправить заявку
+                    </button>
+                    <p class="form-note">Нажимая на кнопку, вы соглашаетесь с политикой обработки данных</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ФУТЕР -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo-icon"><i class="fas fa-dumbbell"></i></div>
+                    <div class="logo-text">FITNESS<span>PRO</span></div>
+                    <p>Твоё идеальное тело начинается сегодня</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Главная</a>
+                    <a href="#about">О нас</a>
+                    <a href="#programs">Программы</a>
+                    <a href="#prices">Цены</a>
+                    <a href="#contact">Контакты</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 FitnessPro. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- МОДАЛЬНОЕ ОКНО -->
+    <div id="modal" class="modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content glass">
+            <span class="close magnetic">&times;</span>
+            <div class="modal-icon pulse-glow">
+                <i class="fas fa-gift"></i>
+            </div>
+            <h3>Бесплатная тренировка</h3>
+            <p>Оставьте заявку, и мы подберём удобное время для первого занятия</p>
+            <form id="modalForm">
+                <div class="form-group floating">
+                    <input type="text" id="modalName" placeholder=" " required>
+                    <label for="modalName">Ваше имя</label>
+                    <div class="form-line"></div>
+                </div>
+                <div class="form-group floating">
+                    <input type="tel" id="modalPhone" placeholder=" " required>
+                    <label for="modalPhone">Номер телефона</label>
+                    <div class="form-line"></div>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block btn-ripple">Записаться</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- CURSOR -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
